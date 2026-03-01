@@ -66,5 +66,7 @@
 2. користувачі описують персонажа як підтримуючого а не дратівливого
 3. більше 20% повертаються на наступний день
 
+Figma: https://www.figma.com/design/yTnBqhHs2AbwCmk5NERp23/Untitled?node-id=10-14&t=eQJjLuonaPkao4I8-0
+
 
 Дякую за увагу :)
