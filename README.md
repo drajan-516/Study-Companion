@@ -194,7 +194,6 @@ FR-07	- Мінімальні взаємодії з персонажем	- US-04
 3. Занадто часті або недоречні повідомлення знижують концентрацію.
 Зменшення: Обмеження частоти фраз
 
-Figma: https://www.figma.com/design/yTnBqhHs2AbwCmk5NERp23/Untitled?node-id=10-14&t=eQJjLuonaPkao4I8-0
-
+Figma: https://www.figma.com/design/yTnBqhHs2AbwCmk5NERp23/Untitled?node-id=0-1&p=f&t=p95P2yXmhQoRfK1e-0
 
 Дякую за увагу :)
