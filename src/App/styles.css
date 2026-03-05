@@ -1,0 +1,103 @@
+:root {
+    --bg-dark: #12161d;
+    --accent-purple: #b388eb;
+    --text-white: #ffffff;
+    --accent-yellow: #f4d35e;
+}
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    overflow-x: hidden;
+}
+
+
+.main_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #060709;
+    z-index: 1000;
+}
+
+#main_menu {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+
+.navLink {
+    color: black;
+    background-color: #D9D9D9;
+    background-size: 150px;
+    text-decoration: none;
+    margin: 0 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Jaini Purva', sans-serif;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navLink:hover {
+    color: #ff9800;
+}
+
+
+.charImg {
+    padding-top: 100px;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    width: 250px;
+    z-index: 2;
+}
+
+
+.custom-shape {
+    /* Размеры блока */
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 300px;
+
+    /* Фоновый цвет */
+    background-color: white;
+
+    /* Создаем сложную форму:
+       1. Левый верхний угол (0% 0%)
+       2. Начало скоса сверху (60% 0%)
+       3. Конец скоса и выступ (70% 20%)
+       4. Правый верхний угол выступа (100% 20%)
+       5. Правый нижний угол (100% 100%)
+       6. Левый нижний угол (0% 100%)
+    */
+    clip-path: polygon(
+            100% 0%,
+            40% 0%,
+            30% 20%,
+            0% 20%,
+            0% 100%,
+            100% 100%
+    );
+
+    /* Центрируем текст внутри */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.text-content {
+    width: 50%; /* Ограничиваем ширину текста, чтобы он был справа */
+    color: black;
+    font-family: sans-serif;
+    line-height: 1.4;
+    font-weight: bold;
+    text-align: center;
+}
