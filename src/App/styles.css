@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap');
+
 :root {
     --bg-dark: #12161d;
     --accent-purple: #b388eb;
@@ -8,7 +10,7 @@
 body {
     margin: 0;
     padding-top: 60px;
-    font-family: 'Arial', sans-serif;
+    font-family: "Jaini Purva", serif;
     background-color: var(--bg-dark);
     color: var(--text-white);
     overflow-x: hidden;
@@ -39,7 +41,7 @@ body {
     margin: 0 20px;
     padding-left: 5px;
     padding-right: 5px;
-    font-family: 'Jaini Purva', sans-serif;
+    font-family: "Jaini Purva", serif;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -48,35 +50,60 @@ body {
     color: #ff9800;
 }
 
+.charMini {
+    height: 400px;
+}
 
 .charImg {
     padding-top: 100px;
-    position: absolute;
     top: -20px;
     left: 20px;
-    width: 250px;
+    height: 800px;
     z-index: 2;
+    position: absolute;
+    object-fit: contain;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    padding-top: 320px;
+    background-color: #0d1117;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.banner > * {
+    grid-area: stack;
+}
+
+.bgTitleBack {
+    position: absolute;
+    color: #1A1D26;
+    padding-left: 20px;
+    margin: 0;
+    z-index: 2;
+    pointer-events: none;
+    text-transform: uppercase;
+    width: 30%;
+}
+
+.bgTitleFront {
+    font-size: 150px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px #1a1a1d;
+    pointer-events: none;
 }
 
 
 .custom-shape {
-    /* Размеры блока */
     width: auto;
     padding-left: 30px;
     padding-right: 30px;
     min-height: 300px;
-
-    /* Фоновый цвет */
+    z-index: 1;
     background-color: white;
-
-    /* Создаем сложную форму:
-       1. Левый верхний угол (0% 0%)
-       2. Начало скоса сверху (60% 0%)
-       3. Конец скоса и выступ (70% 20%)
-       4. Правый верхний угол выступа (100% 20%)
-       5. Правый нижний угол (100% 100%)
-       6. Левый нижний угол (0% 100%)
-    */
     clip-path: polygon(
             100% 0%,
             40% 0%,
@@ -85,8 +112,6 @@ body {
             0% 100%,
             100% 100%
     );
-
-    /* Центрируем текст внутри */
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -94,10 +119,45 @@ body {
 }
 
 .text-content {
-    width: 50%; /* Ограничиваем ширину текста, чтобы он был справа */
+    border-left: 6px solid black;
+    width: 50%;
     color: black;
-    font-family: sans-serif;
-    line-height: 1.4;
+    font-family: "Jaini Purva", serif;
+    text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    padding-left: 20px;
+}
+
+.startBtn {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 70px;
+    background-color: #AE70AF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-family: "Jaini Purva", serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+    outline: none;
+}
+
+.startBtn:hover {
+    background-color: #ff9800;
+    transform: scale(1.02);
+}
+
+.startBtn:active {
+    transform: scale(0.98);
+}
+    text-align: center;
+
 }
