@@ -8,16 +8,15 @@ export async function getHome(app) {
             <span></span><span></span><span></span>
         </div>
 
-        <header class="header">
+        <header class="banner">
             <div class="charImageWrapper">
-                <img src="/src/Sharedared/UI/sprites/nekomataFull.png" alt="Nekomata" class="charImg">
-                <h1 class="bgTitle">NEKOMATA</h1>
             </div>
             <div class="figureСontainer">
+            <h1 class="bgTitleBack">NEKOMATA</h1>
                 <div class="content">
-                    <h1 class="title">NEKOMATA</h1>
                     <div class="custom-shape">
                         <div class="text-content">
+                          </p> Meet Nekomata, your loyal 
                           learning assistant who stays right by your side until 
                           the timer runs out. No matter how long your study 
                          session lasts, Nekomata remains with you — focused, 
@@ -25,15 +24,23 @@ export async function getHome(app) {
                         </div>
                     </div>
                 </div>
+                <img src="/src/Shared/UI/sprites/nekomataFull.png" alt="Nekomata" class="charImg">
+                    <h1 class="bgTitleFront">NEKOMATA</h1>
             </div>
+           
         </header>
 
         <section class="descriptionSection">
             <div class="descBox">
-                <p>Struggling to understand a difficult topic? Trying to memorize complex material but it just won't stick? Nekomata listens carefully to every concern you share. Whether you need to talk through a challenging math problem, organize your notes, or simply repeat information out loud to remember it better, Nekomata is always ready to help.</p>
+                <p>Struggling to understand a difficult topic? 
+                Trying to memorize complex material but it just won't stick? 
+                Nekomata listens carefully to every concern you share. 
+                Whether you need to talk through a challenging math problem, 
+                organize your notes, or simply repeat information out loud to remember it better, 
+                Nekomata is always ready to help.</p>
             </div>
             <div class="characterPreview">
-                <img src="nekomata_close.png" alt="Nekomata Preview">
+               <img src="/src/Shared/UI/sprites/nekomataFull.png" alt="NekomataPreview" class="charMini">
             </div>
         </section>
 
